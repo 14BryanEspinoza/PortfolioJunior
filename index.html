@@ -9,56 +9,50 @@
     <meta name="author" content="Bryan Espinoza" />
     <meta
       name="description"
-      content="Portfolio de Bryan Espinoza - Junior Frontend Developer enfocado en soluciones modernas."
+      content="Portfolio de Bryan Espinoza - Frontend Developer enfocado en soluciones modernas."
     />
     <meta
       name="keywords"
       content="Bryan Espinoza, Frontend, Junior, Portfolio,"
     />
     <!-- Open Graph / Facebook -->
-    <meta
-      property="og:title"
-      content="Bryan Espinoza - Junior Frontend Developer"
-    />
+    <meta property="og:title" content="Bryan Espinoza - Frontend Developer" />
     <meta
       property="og:description"
-      content="Portfolio de Bryan Espinoza - Junior Frontend Developer enfocado en soluciones modernas."
+      content="Portfolio de Bryan Espinoza - Frontend Developer enfocado en soluciones modernas."
     />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
+    <meta property="og:image" content="Assets/img/project5.png" />
+    <meta property="og:url" content="https://portfolio14bz.netlify.app/" />
     <meta property="og:type" content="website" />
     <!-- Twitter -->
     <meta
       property="twitter:title"
-      content="Bryan Espinoza - Junior Frontend Developer"
+      content="Bryan Espinoza - Frontend Developer"
     />
     <meta
       property="twitter:description"
-      content="Portfolio de Bryan Espinoza - Junior Frontend Developer enfocado en soluciones modernas."
+      content="Portfolio de Bryan Espinoza - Frontend Developer enfocado en soluciones modernas."
     />
-    <meta property="twitter:image" content="" />
+    <meta property="twitter:image" content="Assets/img/project5.png" />
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="" />
+    <meta property="twitter:url" content="https://portfolio14bz.netlify.app/" />
+    <!-- Icons Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- JS -->
     <script src="Js/main.js" type="module" defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="Css/output.css" />
     <!-- Icon -->
-    <link rel="icon" href="Assets/favicon.ico" />
+    <link rel="icon" href="Assets/img/icon.png" />
     <!-- Title -->
     <title>Bryan Espinoza | Frontend Developer</title>
   </head>
 
   <!-- Body -->
   <body class="bg-page-bg text-page-text selection:bg-indigo-500/30 font-sans">
-    <!-- Saltar al contenido -->
-    <a
-      href="#main-content"
-      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-indigo-600 focus:text-white focus:rounded-lg"
-    >
-      Saltar al contenido
-    </a>
-
     <!-- Navbar -->
     <header
       id="navbar"
@@ -71,16 +65,16 @@
       >
         <!-- Logo -->
         <a
-          href="#"
-          class="text-2xl font-bold bg-linear-to-r from-indigo-600 to-indigo-400 dark:from-indigo-400 dark:to-indigo-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+          href="index.html"
+          class="text-xl font-bold bg-linear-to-r from-indigo-600 to-indigo-400 dark:from-indigo-400 dark:to-indigo-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
         >
           14BryanEspinoza
         </a>
 
         <!-- Desktop Links -->
-        <div class="hidden md:flex items-center gap-8">
+        <div class="hidden md:flex items-center gap-4">
           <!-- Links -->
-          <ul class="flex items-center gap-6 text-sm font-medium">
+          <ul class="flex items-center gap-4 text-sm font-medium">
             <li>
               <a
                 href="#inicio"
@@ -93,6 +87,13 @@
                 href="#sobre-mi"
                 class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                 >Sobre Mi</a
+              >
+            </li>
+            <li>
+              <a
+                href="#stack"
+                class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                >Stack</a
               >
             </li>
             <li>
@@ -121,36 +122,20 @@
               aria-label="Cambiar tema"
             >
               <!-- Icono de Sol -->
-              <svg
+              <i
                 id="theme-toggle-light-icon"
-                class="hidden w-5 h-5 text-indigo-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+                class="hidden fa-solid fa-sun w-5 h-5 text-indigo-400"
+              ></i>
               <!-- Icono de Luna -->
-              <svg
+              <i
                 id="theme-toggle-dark-icon"
-                class="hidden w-5 h-5 text-indigo-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-              </svg>
+                class="hidden fa-solid fa-moon w-5 h-5 text-indigo-600"
+              ></i>
             </button>
 
             <!-- CV Download -->
             <a
-              href="Assets/BryanCV.pdf"
+              href="Assets/pdf/BryanCV.pdf"
               download
               class="px-5 py-2.5 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 focus-visible:outline-2 focus-visible:outline-indigo-500 focus-visible:outline-offset-2 transition-all active:scale-95 text-sm"
             >
@@ -168,31 +153,15 @@
             aria-label="Cambiar tema"
           >
             <!-- Icono de Sol -->
-            <svg
+            <i
               id="mobile-theme-toggle-light-icon"
-              class="hidden w-5 h-5 text-indigo-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
+              class="hidden fa-solid fa-sun w-5 h-5 text-indigo-400"
+            ></i>
             <!-- Icono de Luna -->
-            <svg
+            <i
               id="mobile-theme-toggle-dark-icon"
-              class="hidden w-5 h-5 text-indigo-600"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-              ></path>
-            </svg>
+              class="hidden fa-solid fa-moon w-5 h-5 text-indigo-600"
+            ></i>
           </button>
 
           <!-- Botón de Menú -->
@@ -204,19 +173,9 @@
           >
             <span class="sr-only">Abrir menú</span>
             <!-- Icono de Menú -->
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
+            <i
+              class="fa-solid fa-bars w-6 h-6 flex items-center justify-center text-xl"
+            ></i>
           </button>
         </div>
       </nav>
@@ -244,6 +203,13 @@
           </li>
           <li>
             <a
+              href="#stack"
+              class="block py-2 hover:text-indigo-600 dark:hover:text-indigo-400"
+              >Stack</a
+            >
+          </li>
+          <li>
+            <a
               href="#proyectos"
               class="block py-2 hover:text-indigo-600 dark:hover:text-indigo-400"
               >Proyectos</a
@@ -261,7 +227,7 @@
         <!-- CV Descargar -->
         <div class="mt-6 pt-6 border-t border-gris-200 dark:border-gris-800">
           <a
-            href="Assets/BryanCV.pdf"
+            href="Assets/pdf/BryanCV.pdf"
             download
             class="block w-full text-center px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-all"
           >
@@ -276,7 +242,7 @@
       <!-- Hero Section -->
       <section
         id="inicio"
-        class="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center px-4 md:px-6 py-16"
+        class="min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center text-center px-4 md:px-6 py-16"
       >
         <!-- Profile Picture -->
         <div class="relative mb-8 group">
@@ -289,7 +255,7 @@
             class="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white dark:border-gris-900 shadow-xl box-shadow-indigo-500/20"
           >
             <img
-              src="Assets/Bryan.jpeg"
+              src="Assets/img/Bryan.jpeg"
               alt="Bryan Espinoza"
               class="w-full h-full object-cover"
             />
@@ -298,19 +264,21 @@
 
         <!-- Title & Subtitle -->
         <h1
-          class="text-4xl md:text-6xl lg:text-6xl font-bold tracking-tight mb-6"
+          class="text-3xl md:text-5xl lg:text-5xl font-bold tracking-tight mb-4"
         >
           Hola, soy <span class="bg-brand-gradient">Bryan Espinoza</span>
         </h1>
+
+        <!-- Subtitle -->
         <p
-          class="text-lg text-gris-600 dark:text-gris-400 max-w-2xl mx-auto mb-10 leading-relaxed"
+          class="text-base text-gris-600 dark:text-gris-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           Frontend Developer apasionado por crear experiencias digitales
           modernas, accesibles y de alto rendimiento.
         </p>
 
         <!-- CTAs -->
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
           <!-- Boton de GitHub -->
           <a
             href="https://github.com/14BryanEspinoza"
@@ -318,11 +286,7 @@
             rel="noopener noreferrer"
             class="flex items-center gap-2 px-6 py-3 bg-gris-900 dark:bg-gris-100 text-white dark:text-gris-900 font-semibold rounded-xl hover:scale-105 transition-all shadow-lg active:scale-95"
           >
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-              />
-            </svg>
+            <i class="fa-brands fa-github text-base"></i>
             GitHub
           </a>
           <!-- Botón de LinkedIn -->
@@ -332,11 +296,7 @@
             rel="noopener noreferrer"
             class="flex items-center gap-2 px-6 py-3 bg-[#0077B5] text-white font-semibold rounded-xl hover:scale-105 transition-all shadow-lg active:scale-95"
           >
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-              />
-            </svg>
+            <i class="fa-brands fa-linkedin text-base"></i>
             LinkedIn
           </a>
         </div>
@@ -345,30 +305,332 @@
         <div
           class="pt-8 border-t border-gris-200 dark:border-gris-800 w-full max-w-xs mx-auto"
         >
+          <!-- Animation -->
           <div class="h-6">
             <span
-              class="typewriter text-xl font-mono text-gris-900 dark:text-white"
+              class="typewriter text-base font-mono text-gris-900 dark:text-white"
               >Hello World...</span
             >
           </div>
         </div>
       </section>
 
-      <!-- Projects Section -->
-      <section id="proyectos" class="py-24 bg-gris-50 dark:bg-gris-950/20">
+      <!-- Stack Section -->
+      <section id="stack" class="py-20 bg-white dark:bg-gris-900/50">
         <div class="container mx-auto px-4 md:px-6">
           <!-- Section Header -->
           <div class="text-center max-w-3xl mx-auto mb-16">
+            <!-- Titulo -->
+            <h2
+              class="text-indigo-600 dark:text-indigo-400 font-mono text-sm uppercase tracking-widest mb-3"
+            >
+              Habilidades
+            </h2>
+
+            <!-- Subtitulo -->
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Mi Tech Stack</h3>
+
+            <!-- Descripción -->
+            <p
+              class="text-base text-gris-600 dark:text-gris-400 leading-relaxed"
+            >
+              Tecnologías y herramientas que utilizo para dar vida a ideas y
+              soluciones digitales.
+            </p>
+          </div>
+
+          <!-- Stack Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Columna: Frontend -->
+            <div class="lg:col-span-8">
+              <!-- Header de categoría -->
+              <div class="flex items-center gap-3 mb-5">
+                <div
+                  class="w-8 h-8 flex items-center justify-center bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 rounded-lg"
+                >
+                  <i class="fa-solid fa-layer-group text-sm"></i>
+                </div>
+                <h4
+                  class="text-sm font-bold uppercase tracking-widest text-gris-500 dark:text-gris-400"
+                >
+                  Frontend
+                </h4>
+                <div class="flex-1 h-px bg-gris-200 dark:bg-gris-800"></div>
+              </div>
+              <!-- Grid de skills -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <!-- HTML5 -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-orange-400/50 hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-50 dark:bg-orange-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-brands fa-html5 text-xl text-orange-500"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">HTML5</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
+                        >Avanzado</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CSS3 -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-blue-50 dark:bg-blue-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-brands fa-css3-alt text-xl text-blue-500"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">CSS3</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
+                        >Avanzado</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-yellow-400/50 hover:shadow-lg hover:shadow-yellow-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-yellow-50 dark:bg-yellow-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-brands fa-js text-xl text-yellow-400"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">JavaScript</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                        >Intermedio</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bootstrap 5 -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-purple-50 dark:bg-purple-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i
+                      class="fa-brands fa-bootstrap text-xl text-purple-600"
+                    ></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">Bootstrap 5</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                        >Intermedio</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sass -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-purple-50 dark:bg-purple-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-brands fa-sass text-xl text-purple-600"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">Sass</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                        >Intermedio</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- jQuery -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-indigo-400/50 hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-50 dark:bg-indigo-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-solid fa-gear text-xl text-indigo-500"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">jQuery</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                        >Intermedio</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-cyan-50 dark:bg-cyan-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-solid fa-wind text-xl text-cyan-400"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">Tailwind CSS</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
+                        >Avanzado</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Columna Derecha: Herramientas + Backend -->
+            <div class="lg:col-span-4 flex flex-col gap-8">
+              <!-- Herramientas -->
+              <div>
+                <div class="flex items-center gap-3 mb-5">
+                  <div
+                    class="w-8 h-8 flex items-center justify-center bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 rounded-lg"
+                  >
+                    <i class="fa-solid fa-toolbox text-sm"></i>
+                  </div>
+                  <h4
+                    class="text-sm font-bold uppercase tracking-widest text-gris-500 dark:text-gris-400"
+                  >
+                    Herramientas
+                  </h4>
+                  <div class="flex-1 h-px bg-gris-200 dark:bg-gris-800"></div>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <!-- Git -->
+                  <div
+                    class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-orange-600/50 hover:shadow-lg hover:shadow-orange-600/5 transition-all duration-300 cursor-default"
+                  >
+                    <div
+                      class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-50 dark:bg-orange-600/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                    >
+                      <i
+                        class="fa-brands fa-git-alt text-xl text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold">Git</span>
+                        <span
+                          class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                          >Intermedio</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- GitHub -->
+                  <div
+                    class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-gris-600/40 hover:shadow-lg hover:shadow-gris-600/5 transition-all duration-300 cursor-default"
+                  >
+                    <div
+                      class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gris-100 dark:bg-gris-800 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                    >
+                      <i
+                        class="fa-brands fa-github text-xl text-gris-900 dark:text-gris-100"
+                      ></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold">GitHub</span>
+                        <span
+                          class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                          >Intermedio</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Antigravity -->
+                  <div
+                    class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 cursor-default"
+                  >
+                    <div
+                      class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-blue-50 dark:bg-blue-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                    >
+                      <i class="fa-solid fa-code text-xl text-blue-500"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold">Antigravity</span>
+                        <span
+                          class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
+                          >Avanzado</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Warp Terminal -->
+                  <div
+                    class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-500/5 transition-all duration-300 cursor-default"
+                  >
+                    <div
+                      class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-pink-50 dark:bg-pink-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                    >
+                      <i class="fa-solid fa-terminal text-xl text-pink-500"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold">Warp Terminal</span>
+                        <span
+                          class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-blue-100 dark:bg-blue-500/15 text-blue-700 dark:text-blue-400"
+                          >Principiante</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="proyectos" class="py-20 bg-gris-50 dark:bg-gris-950/20">
+        <div class="container mx-auto px-4 md:px-6">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <!-- Titulo -->
             <h2
               class="text-indigo-600 dark:text-indigo-400 font-mono text-sm uppercase tracking-widest mb-3"
             >
               Portfolio
             </h2>
-            <h3 class="text-3xl md:text-5xl font-bold mb-6">
+
+            <!-- Subtitulo -->
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">
               Proyectos Destacados
             </h3>
+
+            <!-- Descripción -->
             <p
-              class="font-mono text-lg text-gris-600 dark:text-gris-400 leading-relaxed"
+              class="text-base text-gris-600 dark:text-gris-400 leading-relaxed"
             >
               "Programa no para resolver problemas, si no para crear
               soluciones."
@@ -383,7 +645,7 @@
             >
               <div class="relative aspect-video overflow-hidden">
                 <img
-                  src="Assets/project1.png"
+                  src="Assets/img/project1.png"
                   alt="Landing Page"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -421,19 +683,9 @@
                     class="h-11 flex-1 inline-flex items-center justify-center gap-2 px-4 bg-indigo-600 text-white text-sm font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95"
                   >
                     Demo
-                    <svg
-                      class="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      ></path>
-                    </svg>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    ></i>
                   </a>
                   <a
                     href="https://github.com/14BryanEspinoza/LandingPage"
@@ -442,15 +694,7 @@
                     class="h-11 w-11 inline-flex items-center justify-center bg-gris-100 dark:bg-gris-800 text-gris-900 dark:text-white rounded-xl hover:bg-gris-200 dark:hover:bg-gris-700 transition-colors active:scale-95"
                     aria-label="Ver código en GitHub"
                   >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                      ></path>
-                    </svg>
+                    <i class="fa-brands fa-github text-lg"></i>
                   </a>
                 </div>
               </div>
@@ -462,7 +706,7 @@
             >
               <div class="relative aspect-video overflow-hidden">
                 <img
-                  src="Assets/project2.png"
+                  src="Assets/img/project2.png"
                   alt="ToDo App"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -504,19 +748,9 @@
                     class="h-11 flex-1 inline-flex items-center justify-center gap-2 px-4 bg-indigo-600 text-white text-sm font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95"
                   >
                     Demo
-                    <svg
-                      class="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      ></path>
-                    </svg>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    ></i>
                   </a>
                   <a
                     href="https://github.com/14BryanEspinoza/ToDo-App"
@@ -525,15 +759,7 @@
                     class="h-11 w-11 inline-flex items-center justify-center bg-gris-100 dark:bg-gris-800 text-gris-900 dark:text-white rounded-xl hover:bg-gris-200 dark:hover:bg-gris-700 transition-colors active:scale-95"
                     aria-label="Ver código en GitHub"
                   >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                      ></path>
-                    </svg>
+                    <i class="fa-brands fa-github text-lg"></i>
                   </a>
                 </div>
               </div>
@@ -545,7 +771,7 @@
             >
               <div class="relative aspect-video overflow-hidden">
                 <img
-                  src="Assets/project3.png"
+                  src="Assets/img/project3.png"
                   alt="Dashboard App"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -587,19 +813,9 @@
                     class="h-11 flex-1 inline-flex items-center justify-center gap-2 px-4 bg-indigo-600 text-white text-sm font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95"
                   >
                     Demo
-                    <svg
-                      class="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      ></path>
-                    </svg>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    ></i>
                   </a>
                   <a
                     href="https://github.com/14BryanEspinoza/DashboardApp"
@@ -608,15 +824,7 @@
                     class="h-11 w-11 inline-flex items-center justify-center bg-gris-100 dark:bg-gris-800 text-gris-900 dark:text-white rounded-xl hover:bg-gris-200 dark:hover:bg-gris-700 transition-colors active:scale-95"
                     aria-label="Ver código en GitHub"
                   >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                      ></path>
-                    </svg>
+                    <i class="fa-brands fa-github text-lg"></i>
                   </a>
                 </div>
               </div>
@@ -628,7 +836,7 @@
             >
               <div class="relative aspect-video overflow-hidden">
                 <img
-                  src="Assets/project4.png"
+                  src="Assets/img/project4.png"
                   alt="Hangman Game"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -670,19 +878,9 @@
                     class="h-11 flex-1 inline-flex items-center justify-center gap-2 px-4 bg-indigo-600 text-white text-sm font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95"
                   >
                     Demo
-                    <svg
-                      class="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      ></path>
-                    </svg>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    ></i>
                   </a>
                   <a
                     href="https://github.com/14BryanEspinoza/HangmanGame"
@@ -691,15 +889,7 @@
                     class="h-11 w-11 inline-flex items-center justify-center bg-gris-100 dark:bg-gris-800 text-gris-900 dark:text-white rounded-xl hover:bg-gris-200 dark:hover:bg-gris-700 transition-colors active:scale-95"
                     aria-label="Ver código en GitHub"
                   >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                      ></path>
-                    </svg>
+                    <i class="fa-brands fa-github text-lg"></i>
                   </a>
                 </div>
               </div>
@@ -711,7 +901,7 @@
             >
               <div class="relative aspect-video overflow-hidden">
                 <img
-                  src="Assets/project5.png"
+                  src="Assets/img/project5.png"
                   alt="Portfolio Junior"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -753,19 +943,9 @@
                     class="h-11 flex-1 inline-flex items-center justify-center gap-2 px-4 bg-indigo-600 text-white text-sm font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95"
                   >
                     Demo
-                    <svg
-                      class="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      ></path>
-                    </svg>
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    ></i>
                   </a>
                   <a
                     href="https://github.com/14BryanEspinoza/PortfolioJunior"
@@ -774,15 +954,7 @@
                     class="h-11 w-11 inline-flex items-center justify-center bg-gris-100 dark:bg-gris-800 text-gris-900 dark:text-white rounded-xl hover:bg-gris-200 dark:hover:bg-gris-700 transition-colors active:scale-95"
                     aria-label="Ver código en GitHub"
                   >
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                      ></path>
-                    </svg>
+                    <i class="fa-brands fa-github text-lg"></i>
                   </a>
                 </div>
               </div>
