@@ -9,56 +9,50 @@
     <meta name="author" content="Bryan Espinoza" />
     <meta
       name="description"
-      content="Portfolio de Bryan Espinoza - Junior Frontend Developer enfocado en soluciones modernas."
+      content="Portfolio de Bryan Espinoza - Frontend Developer enfocado en soluciones modernas."
     />
     <meta
       name="keywords"
       content="Bryan Espinoza, Frontend, Junior, Portfolio,"
     />
     <!-- Open Graph / Facebook -->
-    <meta
-      property="og:title"
-      content="Bryan Espinoza - Junior Frontend Developer"
-    />
+    <meta property="og:title" content="Bryan Espinoza - Frontend Developer" />
     <meta
       property="og:description"
-      content="Portfolio de Bryan Espinoza - Junior Frontend Developer enfocado en soluciones modernas."
+      content="Portfolio de Bryan Espinoza - Frontend Developer enfocado en soluciones modernas."
     />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
+    <meta property="og:image" content="Assets/img/project5.png" />
+    <meta property="og:url" content="https://portfolio14bz.netlify.app/" />
     <meta property="og:type" content="website" />
     <!-- Twitter -->
     <meta
       property="twitter:title"
-      content="Bryan Espinoza - Junior Frontend Developer"
+      content="Bryan Espinoza - Frontend Developer"
     />
     <meta
       property="twitter:description"
-      content="Portfolio de Bryan Espinoza - Junior Frontend Developer enfocado en soluciones modernas."
+      content="Portfolio de Bryan Espinoza - Frontend Developer enfocado en soluciones modernas."
     />
-    <meta property="twitter:image" content="" />
+    <meta property="twitter:image" content="Assets/img/project5.png" />
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="" />
+    <meta property="twitter:url" content="https://portfolio14bz.netlify.app/" />
+    <!-- Icons Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- JS -->
     <script src="Js/main.js" type="module" defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="Css/output.css" />
     <!-- Icon -->
-    <link rel="icon" href="Assets/favicon.ico" />
+    <link rel="icon" href="Assets/img/icon.png" />
     <!-- Title -->
     <title>Bryan Espinoza | Frontend Developer</title>
   </head>
 
   <!-- Body -->
   <body class="bg-page-bg text-page-text selection:bg-indigo-500/30 font-sans">
-    <!-- Saltar al contenido -->
-    <a
-      href="#main-content"
-      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-indigo-600 focus:text-white focus:rounded-lg"
-    >
-      Saltar al contenido
-    </a>
-
     <!-- Navbar -->
     <header
       id="navbar"
@@ -71,16 +65,16 @@
       >
         <!-- Logo -->
         <a
-          href="#"
-          class="text-2xl font-bold bg-linear-to-r from-indigo-600 to-indigo-400 dark:from-indigo-400 dark:to-indigo-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+          href="index.html"
+          class="text-xl font-bold bg-linear-to-r from-indigo-600 to-indigo-400 dark:from-indigo-400 dark:to-indigo-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
         >
           14BryanEspinoza
         </a>
 
         <!-- Desktop Links -->
-        <div class="hidden md:flex items-center gap-8">
+        <div class="hidden md:flex items-center gap-4">
           <!-- Links -->
-          <ul class="flex items-center gap-6 text-sm font-medium">
+          <ul class="flex items-center gap-4 text-sm font-medium">
             <li>
               <a
                 href="#inicio"
@@ -93,6 +87,13 @@
                 href="#sobre-mi"
                 class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                 >Sobre Mi</a
+              >
+            </li>
+            <li>
+              <a
+                href="#stack"
+                class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                >Stack</a
               >
             </li>
             <li>
@@ -121,36 +122,20 @@
               aria-label="Cambiar tema"
             >
               <!-- Icono de Sol -->
-              <svg
+              <i
                 id="theme-toggle-light-icon"
-                class="hidden w-5 h-5 text-indigo-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+                class="hidden fa-solid fa-sun w-5 h-5 text-indigo-400"
+              ></i>
               <!-- Icono de Luna -->
-              <svg
+              <i
                 id="theme-toggle-dark-icon"
-                class="hidden w-5 h-5 text-indigo-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-              </svg>
+                class="hidden fa-solid fa-moon w-5 h-5 text-indigo-600"
+              ></i>
             </button>
 
             <!-- CV Download -->
             <a
-              href="Assets/BryanCV.pdf"
+              href="Assets/pdf/BryanCV.pdf"
               download
               class="px-5 py-2.5 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 focus-visible:outline-2 focus-visible:outline-indigo-500 focus-visible:outline-offset-2 transition-all active:scale-95 text-sm"
             >
@@ -168,31 +153,15 @@
             aria-label="Cambiar tema"
           >
             <!-- Icono de Sol -->
-            <svg
+            <i
               id="mobile-theme-toggle-light-icon"
-              class="hidden w-5 h-5 text-indigo-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
+              class="hidden fa-solid fa-sun w-5 h-5 text-indigo-400"
+            ></i>
             <!-- Icono de Luna -->
-            <svg
+            <i
               id="mobile-theme-toggle-dark-icon"
-              class="hidden w-5 h-5 text-indigo-600"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-              ></path>
-            </svg>
+              class="hidden fa-solid fa-moon w-5 h-5 text-indigo-600"
+            ></i>
           </button>
 
           <!-- Botón de Menú -->
@@ -204,19 +173,9 @@
           >
             <span class="sr-only">Abrir menú</span>
             <!-- Icono de Menú -->
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
+            <i
+              class="fa-solid fa-bars w-6 h-6 flex items-center justify-center text-xl"
+            ></i>
           </button>
         </div>
       </nav>
@@ -224,7 +183,7 @@
       <!-- Menu Movil -->
       <div
         id="mobile-menu"
-        class="hidden absolute top-full left-0 w-full bg-white dark:bg-gris-950 border-b border-gris-200 dark:border-gris-800 shadow-xl py-6 px-4 md:hidden animate-in fade-in slide-in-from-top-4 duration-300"
+        class="hidden absolute top-full left-0 w-full h-screen bg-white dark:bg-gris-950 border-b border-gris-200 dark:border-gris-800 shadow-xl py-6 px-4 md:hidden animate-in fade-in slide-in-from-top-4 duration-300"
       >
         <!-- Links -->
         <ul class="flex flex-col items-center gap-4 text-lg font-medium">
@@ -237,9 +196,9 @@
           </li>
           <li>
             <a
-              href="#sobre-mi"
+              href="#stack"
               class="block py-2 hover:text-indigo-600 dark:hover:text-indigo-400"
-              >Sobre Mi</a
+              >Stack</a
             >
           </li>
           <li>
@@ -247,6 +206,20 @@
               href="#proyectos"
               class="block py-2 hover:text-indigo-600 dark:hover:text-indigo-400"
               >Proyectos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#experiencia"
+              class="block py-2 hover:text-indigo-600 dark:hover:text-indigo-400"
+              >Experiencia</a
+            >
+          </li>
+          <li>
+            <a
+              href="#sobre-mi"
+              class="block py-2 hover:text-indigo-600 dark:hover:text-indigo-400"
+              >Sobre Mi</a
             >
           </li>
           <li>
@@ -261,7 +234,7 @@
         <!-- CV Descargar -->
         <div class="mt-6 pt-6 border-t border-gris-200 dark:border-gris-800">
           <a
-            href="Assets/BryanCV.pdf"
+            href="Assets/pdf/BryanCV.pdf"
             download
             class="block w-full text-center px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-all"
           >
@@ -272,8 +245,1287 @@
     </header>
 
     <!-- Main -->
-    <main id="main-content" class="pt-20">
-      <!-- Content sections will go here -->
+    <main id="main-content" class="pt-16">
+      <!-- Hero Section -->
+      <section
+        id="inicio"
+        class="min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center text-center px-4 md:px-6 py-16"
+      >
+        <!-- Profile Picture -->
+        <div class="relative mb-8 group">
+          <div
+            class="absolute -inset-1 bg-linear-to-r from-indigo-600 to-indigo-400 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"
+          ></div>
+
+          <!-- Imagen de perfil -->
+          <div
+            class="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white dark:border-gris-900 shadow-xl box-shadow-indigo-500/20"
+          >
+            <img
+              src="Assets/img/Bryan.jpeg"
+              alt="Bryan Espinoza"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Title & Subtitle -->
+        <h1
+          class="text-3xl md:text-5xl lg:text-5xl font-bold tracking-tight mb-4"
+        >
+          Hola, soy <span class="bg-brand-gradient">Bryan Espinoza</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p
+          class="text-base text-gris-600 dark:text-gris-400 max-w-2xl mx-auto mb-10 leading-relaxed"
+        >
+          Frontend Developer apasionado por crear experiencias digitales
+          modernas, accesibles y de alto rendimiento.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <!-- Boton de GitHub -->
+          <a
+            href="https://github.com/14BryanEspinoza"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-6 py-3 bg-gris-900 dark:bg-gris-100 text-white dark:text-gris-900 font-semibold rounded-xl hover:scale-105 transition-all shadow-lg active:scale-95"
+          >
+            <i class="fa-brands fa-github text-base"></i>
+            GitHub
+          </a>
+          <!-- Botón de LinkedIn -->
+          <a
+            href="https://linkedin.com/in/14bryanespinoza"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-6 py-3 bg-[#0077B5] text-white font-semibold rounded-xl hover:scale-105 transition-all shadow-lg active:scale-95"
+          >
+            <i class="fa-brands fa-linkedin text-base"></i>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Animation Container -->
+        <div
+          class="pt-8 border-t border-gris-200 dark:border-gris-800 w-full max-w-xs mx-auto"
+        >
+          <!-- Animation -->
+          <div class="h-6">
+            <span
+              class="typewriter text-base font-mono text-gris-900 dark:text-white"
+              >Hello World...</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Stack Section -->
+      <section id="stack" class="py-20 bg-white dark:bg-gris-900/50">
+        <div class="container mx-auto px-4 md:px-6">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <!-- Titulo -->
+            <h2
+              class="text-indigo-600 dark:text-indigo-400 font-mono text-sm uppercase tracking-widest mb-3"
+            >
+              Habilidades
+            </h2>
+
+            <!-- Subtitulo -->
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Mi Tech Stack</h3>
+
+            <!-- Descripción -->
+            <p
+              class="text-base text-gris-600 dark:text-gris-400 leading-relaxed"
+            >
+              Tecnologías y herramientas que utilizo para dar vida a ideas y
+              soluciones digitales.
+            </p>
+          </div>
+
+          <!-- Stack Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Columna: Frontend -->
+            <div class="lg:col-span-8">
+              <!-- Header de categoría -->
+              <div class="flex items-center gap-3 mb-5">
+                <div
+                  class="w-8 h-8 flex items-center justify-center bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 rounded-lg"
+                >
+                  <i class="fa-solid fa-layer-group text-sm"></i>
+                </div>
+                <h4
+                  class="text-sm font-bold uppercase tracking-widest text-gris-500 dark:text-gris-400"
+                >
+                  Frontend
+                </h4>
+                <div class="flex-1 h-px bg-gris-200 dark:bg-gris-800"></div>
+              </div>
+              <!-- Grid de skills -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <!-- HTML5 -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-orange-400/50 hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-50 dark:bg-orange-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-brands fa-html5 text-xl text-orange-500"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">HTML5</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
+                        >Avanzado</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CSS3 -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-blue-50 dark:bg-blue-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-brands fa-css3-alt text-xl text-blue-500"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">CSS3</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
+                        >Avanzado</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-yellow-400/50 hover:shadow-lg hover:shadow-yellow-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-yellow-50 dark:bg-yellow-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-brands fa-js text-xl text-yellow-400"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">JavaScript</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                        >Intermedio</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bootstrap 5 -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-purple-50 dark:bg-purple-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i
+                      class="fa-brands fa-bootstrap text-xl text-purple-600"
+                    ></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">Bootstrap 5</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                        >Intermedio</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sass -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-purple-50 dark:bg-purple-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-brands fa-sass text-xl text-purple-600"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">Sass</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                        >Intermedio</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- jQuery -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-indigo-400/50 hover:shadow-lg hover:shadow-indigo-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-50 dark:bg-indigo-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-solid fa-gear text-xl text-indigo-500"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">jQuery</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                        >Intermedio</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div
+                  class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/5 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-cyan-50 dark:bg-cyan-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <i class="fa-solid fa-wind text-xl text-cyan-400"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-semibold">Tailwind CSS</span>
+                      <span
+                        class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
+                        >Avanzado</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Columna Derecha: Herramientas + Backend -->
+            <div class="lg:col-span-4 flex flex-col gap-8">
+              <!-- Herramientas -->
+              <div>
+                <div class="flex items-center gap-3 mb-5">
+                  <div
+                    class="w-8 h-8 flex items-center justify-center bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 rounded-lg"
+                  >
+                    <i class="fa-solid fa-toolbox text-sm"></i>
+                  </div>
+                  <h4
+                    class="text-sm font-bold uppercase tracking-widest text-gris-500 dark:text-gris-400"
+                  >
+                    Herramientas
+                  </h4>
+                  <div class="flex-1 h-px bg-gris-200 dark:bg-gris-800"></div>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <!-- Git -->
+                  <div
+                    class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-orange-600/50 hover:shadow-lg hover:shadow-orange-600/5 transition-all duration-300 cursor-default"
+                  >
+                    <div
+                      class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-orange-50 dark:bg-orange-600/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                    >
+                      <i
+                        class="fa-brands fa-git-alt text-xl text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold">Git</span>
+                        <span
+                          class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                          >Intermedio</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- GitHub -->
+                  <div
+                    class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-gris-600/40 hover:shadow-lg hover:shadow-gris-600/5 transition-all duration-300 cursor-default"
+                  >
+                    <div
+                      class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-gris-100 dark:bg-gris-800 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                    >
+                      <i
+                        class="fa-brands fa-github text-xl text-gris-900 dark:text-gris-100"
+                      ></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold">GitHub</span>
+                        <span
+                          class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400"
+                          >Intermedio</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Antigravity -->
+                  <div
+                    class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 cursor-default"
+                  >
+                    <div
+                      class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-blue-50 dark:bg-blue-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                    >
+                      <i class="fa-solid fa-code text-xl text-blue-500"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold">Antigravity</span>
+                        <span
+                          class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-emerald-100 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-400"
+                          >Avanzado</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Warp Terminal -->
+                  <div
+                    class="group flex items-center gap-4 p-4 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-500/5 transition-all duration-300 cursor-default"
+                  >
+                    <div
+                      class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-pink-50 dark:bg-pink-500/10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+                    >
+                      <i class="fa-solid fa-terminal text-xl text-pink-500"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold">Warp Terminal</span>
+                        <span
+                          class="px-2 py-0.5 text-[9px] font-bold uppercase rounded-full bg-blue-100 dark:bg-blue-500/15 text-blue-700 dark:text-blue-400"
+                          >Principiante</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="proyectos" class="py-20 bg-gris-50 dark:bg-gris-950/20">
+        <div class="container mx-auto px-4 md:px-6">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <!-- Titulo -->
+            <h2
+              class="text-indigo-600 dark:text-indigo-400 font-mono text-sm uppercase tracking-widest mb-3"
+            >
+              Portfolio
+            </h2>
+
+            <!-- Subtitulo -->
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">
+              Proyectos Destacados
+            </h3>
+
+            <!-- Descripción -->
+            <p
+              class="text-base text-gris-600 dark:text-gris-400 leading-relaxed"
+            >
+              "Programa no para resolver problemas, si no para crear
+              soluciones."
+            </p>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Proyecto 1 -->
+            <article
+              class="group bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="relative aspect-video overflow-hidden">
+                <img
+                  src="Assets/img/project1.png"
+                  alt="Landing Page"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 flex flex-col h-[300px]">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    HTML
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    CSS
+                  </span>
+                </div>
+                <h4
+                  class="text-2xl font-bold mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
+                >
+                  Landing Page
+                </h4>
+                <p
+                  class="text-gris-600 dark:text-gris-400 text-sm mb-6 line-clamp-3"
+                >
+                  Interfaz moderna y de alto rendimiento, diseñada con un
+                  enfoque mobile-first para garantizar una experiencia de
+                  usuario fluida y accesible en cualquier dispositivo.
+                </p>
+                <div class="mt-auto flex gap-4">
+                  <a
+                    href="https://landingpage14bz.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="h-11 flex-1 inline-flex items-center justify-center gap-2 px-4 bg-indigo-600 text-white text-sm font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95"
+                  >
+                    Demo
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://github.com/14BryanEspinoza/LandingPage"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="h-11 w-11 inline-flex items-center justify-center bg-gris-100 dark:bg-gris-800 text-gris-900 dark:text-white rounded-xl hover:bg-gris-200 dark:hover:bg-gris-700 transition-colors active:scale-95"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fa-brands fa-github text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Proyecto 2 -->
+            <article
+              class="group bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="relative aspect-video overflow-hidden">
+                <img
+                  src="Assets/img/project2.png"
+                  alt="ToDo App"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 flex flex-col h-[300px]">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    HTML
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    CSS
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    JavaScript
+                  </span>
+                </div>
+                <h4
+                  class="text-2xl font-bold mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
+                >
+                  ToDo App
+                </h4>
+                <p
+                  class="text-gris-600 dark:text-gris-400 text-sm mb-6 line-clamp-3"
+                >
+                  Aplicación de lista de tareas con funciones CRUD,
+                  almacenamiento local y diseño responsive.
+                </p>
+                <div class="mt-auto flex gap-4">
+                  <a
+                    href="https://todoapp14bz.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="h-11 flex-1 inline-flex items-center justify-center gap-2 px-4 bg-indigo-600 text-white text-sm font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95"
+                  >
+                    Demo
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://github.com/14BryanEspinoza/ToDo-App"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="h-11 w-11 inline-flex items-center justify-center bg-gris-100 dark:bg-gris-800 text-gris-900 dark:text-white rounded-xl hover:bg-gris-200 dark:hover:bg-gris-700 transition-colors active:scale-95"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fa-brands fa-github text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Proyecto 3 -->
+            <article
+              class="group bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="relative aspect-video overflow-hidden">
+                <img
+                  src="Assets/img/project3.png"
+                  alt="Dashboard App"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 flex flex-col h-[300px]">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    JavaScript
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    Bootstrap
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    Sass
+                  </span>
+                </div>
+                <h4
+                  class="text-2xl font-bold mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
+                >
+                  Dashboard App
+                </h4>
+                <p
+                  class="text-gris-600 dark:text-gris-400 text-sm mb-6 line-clamp-3"
+                >
+                  Aplicación de panel de control con visualización de datos y
+                  diseño responsive.
+                </p>
+                <div class="mt-auto flex gap-4">
+                  <a
+                    href="https://dashboardapp14bz.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="h-11 flex-1 inline-flex items-center justify-center gap-2 px-4 bg-indigo-600 text-white text-sm font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95"
+                  >
+                    Demo
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://github.com/14BryanEspinoza/DashboardApp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="h-11 w-11 inline-flex items-center justify-center bg-gris-100 dark:bg-gris-800 text-gris-900 dark:text-white rounded-xl hover:bg-gris-200 dark:hover:bg-gris-700 transition-colors active:scale-95"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fa-brands fa-github text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Proyecto 4 -->
+            <article
+              class="group bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="relative aspect-video overflow-hidden">
+                <img
+                  src="Assets/img/project4.png"
+                  alt="Hangman Game"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 flex flex-col h-[300px]">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    Bootstrap
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    Sass
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    JQuery
+                  </span>
+                </div>
+                <h4
+                  class="text-2xl font-bold mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
+                >
+                  Hangman Game
+                </h4>
+                <p
+                  class="text-gris-600 dark:text-gris-400 text-sm mb-6 line-clamp-3"
+                >
+                  Juego del ahorcado con interfaz atractiva y experiencia de
+                  usuario optimizada.
+                </p>
+                <div class="mt-auto flex gap-4">
+                  <a
+                    href="https://hangmangame14bz.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="h-11 flex-1 inline-flex items-center justify-center gap-2 px-4 bg-indigo-600 text-white text-sm font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95"
+                  >
+                    Demo
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://github.com/14BryanEspinoza/HangmanGame"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="h-11 w-11 inline-flex items-center justify-center bg-gris-100 dark:bg-gris-800 text-gris-900 dark:text-white rounded-xl hover:bg-gris-200 dark:hover:bg-gris-700 transition-colors active:scale-95"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fa-brands fa-github text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Proyecto 5 -->
+            <article
+              class="group bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div class="relative aspect-video overflow-hidden">
+                <img
+                  src="Assets/img/project5.png"
+                  alt="Portfolio Junior"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-8 flex flex-col h-[300px]">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    HTML
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    Tailwind CSS
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400"
+                  >
+                    JavaScript
+                  </span>
+                </div>
+                <h4
+                  class="text-2xl font-bold mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
+                >
+                  Portfolio Junior
+                </h4>
+                <p
+                  class="text-gris-600 dark:text-gris-400 text-sm mb-6 line-clamp-3"
+                >
+                  Mi portafolio personal, donde muestro mis proyectos y
+                  habilidades.
+                </p>
+                <div class="mt-auto flex gap-4">
+                  <a
+                    href="https://portfolio14bz.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="h-11 flex-1 inline-flex items-center justify-center gap-2 px-4 bg-indigo-600 text-white text-sm font-bold rounded-xl hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 active:scale-95"
+                  >
+                    Demo
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://github.com/14BryanEspinoza/PortfolioJunior"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="h-11 w-11 inline-flex items-center justify-center bg-gris-100 dark:bg-gris-800 text-gris-900 dark:text-white rounded-xl hover:bg-gris-200 dark:hover:bg-gris-700 transition-colors active:scale-95"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fa-brands fa-github text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experiencia Section -->
+      <section id="experiencia" class="py-20 bg-gris-50 dark:bg-gris-950/20">
+        <div class="container mx-auto px-4 md:px-6">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2
+              class="text-indigo-600 dark:text-indigo-400 font-mono text-sm uppercase tracking-widest mb-3"
+            >
+              Trayectoria
+            </h2>
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">
+              Experiencia y Formación
+            </h3>
+            <p
+              class="text-base text-gris-600 dark:text-gris-400 leading-relaxed"
+            >
+              Mi camino en el mundo de la tecnología, desde mis inicios
+              académicos hasta mi evolución como desarrollador.
+            </p>
+          </div>
+
+          <!-- Timeline Container -->
+          <div class="relative max-w-4xl mx-auto">
+            <!-- Central Line -->
+            <div
+              class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gris-200 dark:bg-gris-800 md:-translate-x-1/2"
+            ></div>
+
+            <div class="space-y-12">
+              <!-- 2020: Universidad -->
+              <div class="relative flex flex-col md:flex-row gap-8 md:gap-0">
+                <div class="md:w-1/2 md:pr-12 md:text-right">
+                  <div
+                    class="p-6 bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+                  >
+                    <span
+                      class="inline-block px-3 py-1 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 text-xs font-bold rounded-full mb-3"
+                      >2020</span
+                    >
+                    <h4 class="text-lg font-bold mb-2">
+                      Inicio de Mi Carrera Universitaria
+                    </h4>
+                    <p class="text-sm text-gris-600 dark:text-gris-400">
+                      Comencé mi formación profesional en la carrera de
+                      <span class="font-semibold">Ingeniería en Sistemas</span>,
+                      sentando las bases teóricas de la computación.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute left-4 md:left-1/2 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white dark:border-gris-950 md:-translate-x-1/2 z-10 top-6"
+                ></div>
+                <div class="md:w-1/2"></div>
+              </div>
+
+              <!-- 2022: Autodidacta -->
+              <div class="relative flex flex-col md:flex-row gap-8 md:gap-0">
+                <div class="md:w-1/2"></div>
+                <div
+                  class="absolute left-4 md:left-1/2 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white dark:border-gris-950 md:-translate-x-1/2 z-10 top-6"
+                ></div>
+                <div class="md:w-1/2 md:pl-12">
+                  <div
+                    class="p-6 bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+                  >
+                    <span
+                      class="inline-block px-3 py-1 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 text-xs font-bold rounded-full mb-3"
+                      >2022</span
+                    >
+                    <h4 class="text-lg font-bold mb-2">
+                      Desarrollo Web Frontend
+                    </h4>
+                    <p class="text-sm text-gris-600 dark:text-gris-400">
+                      Inicié mi camino autodidacta en el desarrollo web,
+                      especializándome en tecnologías como
+                      <span class="font-semibold">HTML, CSS y JavaScript</span>
+                      para crear interfaces interactivas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2024: Mentors International -->
+              <div class="relative flex flex-col md:flex-row gap-8 md:gap-0">
+                <div class="md:w-1/2 md:pr-12 md:text-right">
+                  <div
+                    class="p-6 bg-linear-to-br from-indigo-600/5 to-transparent dark:from-indigo-600/10 dark:to-transparent bg-white dark:bg-gris-900 border border-indigo-200 dark:border-indigo-800 rounded-2xl shadow-sm hover:shadow-lg transition-all"
+                  >
+                    <span
+                      class="inline-block px-3 py-1 bg-indigo-600 text-white text-xs font-bold rounded-full mb-3"
+                      >2024</span
+                    >
+                    <h4 class="text-lg font-bold mb-2">
+                      Mentors International
+                    </h4>
+                    <p class="text-sm text-gris-600 dark:text-gris-400 mb-4">
+                      Completé con éxito el programa de formación intensiva,
+                      fortaleciendo mis habilidades técnicas y blandas en un
+                      entorno profesional.
+                    </p>
+                    <a
+                      href="Assets/pdf/MentorsBryan.pdf"
+                      target="_blank"
+                      class="inline-flex items-center gap-2 text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline"
+                    >
+                      Ver Certificado
+                      <i class="fa-solid fa-external-link text-[10px]"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="absolute left-4 md:left-1/2 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white dark:border-gris-950 md:-translate-x-1/2 z-10 top-6 ring-4 ring-indigo-500/20"
+                ></div>
+                <div class="md:w-1/2"></div>
+              </div>
+
+              <!-- 2025: Graduación -->
+              <div class="relative flex flex-col md:flex-row gap-8 md:gap-0">
+                <div class="md:w-1/2"></div>
+                <div
+                  class="absolute left-4 md:left-1/2 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white dark:border-gris-950 md:-translate-x-1/2 z-10 top-6"
+                ></div>
+                <div class="md:w-1/2 md:pl-12">
+                  <div
+                    class="p-6 bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+                  >
+                    <span
+                      class="inline-block px-3 py-1 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 text-xs font-bold rounded-full mb-3"
+                      >2025</span
+                    >
+                    <h4 class="text-lg font-bold mb-2">
+                      Finalización de Carrera
+                    </h4>
+                    <p class="text-sm text-gris-600 dark:text-gris-400">
+                      Culminé mis estudios universitarios, obteniendo el título
+                      de
+                      <span class="font-semibold">Ingeniero en Sistemas</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2026: Backend -->
+              <div class="relative flex flex-col md:flex-row gap-8 md:gap-0">
+                <div class="md:w-1/2 md:pr-12 md:text-right">
+                  <div
+                    class="p-6 bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl shadow-sm border-l-4 border-l-emerald-500"
+                  >
+                    <span
+                      class="inline-block px-3 py-1 bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-bold rounded-full mb-3"
+                      >2026</span
+                    >
+                    <h4 class="text-lg font-bold mb-2">Iniciando en Backend</h4>
+                    <p
+                      class="text-sm text-gris-600 dark:text-gris-400 leading-relaxed"
+                    >
+                      Expandiendo mis horizontes hacia el
+                      <span class="font-semibold">Backend</span>, explorando
+                      arquitecturas de servidor y bases de datos para
+                      convertirme en un desarrollador Full-Stack.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute left-4 md:left-1/2 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white dark:border-gris-950 md:-translate-x-1/2 z-10 top-6 ring-4 ring-emerald-500/20"
+                ></div>
+                <div class="md:w-1/2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre Mi Section -->
+      <section id="sobre-mi" class="py-20 bg-white dark:bg-gris-900/50">
+        <div class="container mx-auto px-4 md:px-6">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2
+              class="text-indigo-600 dark:text-indigo-400 font-mono text-sm uppercase tracking-widest mb-3"
+            >
+              Sobre Mí
+            </h2>
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">
+              Conoce mi Historia
+            </h3>
+            <p
+              class="text-base text-gris-600 dark:text-gris-400 leading-relaxed"
+            >
+              Un poco más sobre quién soy, qué me impulsa y hacia dónde voy en
+              el mundo del desarrollo.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <!-- Motivation  -->
+            <div class="lg:col-span-7 space-y-6">
+              <div
+                class="p-8 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-3xl shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h4 class="text-xl font-bold mb-4 flex items-center gap-2">
+                  <i class="fa-solid fa-heart text-indigo-500"></i>
+                  ¿Qué me motiva?
+                </h4>
+                <p
+                  class="text-gris-600 dark:text-gris-400 leading-relaxed mb-4"
+                >
+                  Desde que escribí mi primera línea de código, descubrí que el
+                  software no es solo lógica, sino una herramienta para
+                  transformar ideas en soluciones reales que impacten la vida de
+                  las personas.
+                </p>
+                <p class="text-gris-600 dark:text-gris-400 leading-relaxed">
+                  Me motiva el aprendizaje constante, el reto de resolver
+                  problemas complejos y la posibilidad de crear interfaces que
+                  sean no solo funcionales, sino también disfrutables para el
+                  usuario. Cada proyecto es una oportunidad para superar mis
+                  límites y aprender algo nuevo.
+                </p>
+              </div>
+
+              <!-- Goals -->
+              <div
+                class="p-8 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-3xl shadow-sm"
+              >
+                <h4 class="text-xl font-bold mb-6 flex items-center gap-2">
+                  <i class="fa-solid fa-bullseye text-indigo-500"></i>
+                  Mis Metas
+                </h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div
+                    class="p-4 bg-white dark:bg-gris-950 border border-gris-200 dark:border-gris-800 rounded-2xl"
+                  >
+                    <div
+                      class="w-10 h-10 flex items-center justify-center bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl mb-3"
+                    >
+                      <i class="fa-solid fa-code text-xl"></i>
+                    </div>
+                    <h5 class="font-bold mb-1">Full-Stack Developer</h5>
+                    <p
+                      class="text-xs text-gris-600 dark:text-gris-500 leading-relaxed"
+                    >
+                      Dominar tanto el frontend como el backend para construir
+                      aplicaciones completas y escalables.
+                    </p>
+                  </div>
+                  <div
+                    class="p-4 bg-white dark:bg-gris-950 border border-gris-200 dark:border-gris-800 rounded-2xl"
+                  >
+                    <div
+                      class="w-10 h-10 flex items-center justify-center bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl mb-3"
+                    >
+                      <i class="fa-solid fa-laptop-code text-xl"></i>
+                    </div>
+                    <h5 class="font-bold mb-1">Software Engineer</h5>
+                    <p
+                      class="text-xs text-gris-600 dark:text-gris-500 leading-relaxed"
+                    >
+                      Profundizar en la ingeniería de software para diseñar
+                      sistemas robustos y de alta calidad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Info & Status -->
+            <div class="lg:col-span-5 space-y-6">
+              <div
+                class="p-8 bg-gris-50 dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-3xl shadow-sm"
+              >
+                <h4 class="text-lg font-bold mb-6">Información Rápida</h4>
+
+                <div class="space-y-6">
+                  <!-- Location -->
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-white dark:bg-gris-950 border border-gris-200 dark:border-gris-800 rounded-xl"
+                    >
+                      <i class="fa-solid fa-location-dot text-indigo-500"></i>
+                    </div>
+                    <div>
+                      <p
+                        class="text-xs font-bold uppercase tracking-widest text-gris-500 dark:text-gris-500 mb-0.5"
+                      >
+                        Ubicación
+                      </p>
+                      <p class="text-sm font-semibold">Carazo, Nicaragua</p>
+                    </div>
+                  </div>
+
+                  <!-- Availability -->
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-white dark:bg-gris-950 border border-gris-200 dark:border-gris-800 rounded-xl"
+                    >
+                      <i class="fa-solid fa-briefcase text-indigo-500"></i>
+                    </div>
+                    <div>
+                      <p
+                        class="text-xs font-bold uppercase tracking-widest text-gris-500 dark:text-gris-500 mb-0.5"
+                      >
+                        Disponibilidad
+                      </p>
+                      <p class="text-sm font-semibold flex items-center gap-2">
+                        Inmediata
+                        <span class="flex h-2 w-2 relative">
+                          <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                          ></span>
+                          <span
+                            class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                          ></span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Status Card -->
+                  <div
+                    class="mt-8 p-6 bg-linear-to-br from-indigo-600 to-indigo-700 rounded-2xl text-white shadow-xl shadow-indigo-500/20"
+                  >
+                    <p
+                      class="text-xs font-bold uppercase tracking-widest text-indigo-100 mb-2"
+                    >
+                      Estado Actual
+                    </p>
+                    <p class="text-lg font-bold mb-4">
+                      Abierto a nuevas oportunidades laborales ❤️‍🔥
+                    </p>
+                    <a
+                      href="#contacto"
+                      class="inline-flex items-center gap-2 px-4 py-2 bg-white text-indigo-600 text-sm font-bold rounded-lg hover:bg-gris-50 transition-colors"
+                    >
+                      Contáctame
+                      <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contacto" class="py-20 bg-gris-50 dark:bg-gris-950/20">
+        <div class="container mx-auto px-4 md:px-6">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2
+              class="text-indigo-600 dark:text-indigo-400 font-mono text-sm uppercase tracking-widest mb-3"
+            >
+              Contacto
+            </h2>
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">
+              ¿Tienes un Proyecto en Mente?
+            </h3>
+            <p
+              class="text-base text-gris-600 dark:text-gris-400 leading-relaxed"
+            >
+              Estoy disponible para nuevos proyectos y oportunidades laborales.
+              ¡Hablemos!
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <!-- Contact Info -->
+              <div class="space-y-8">
+                <div>
+                  <h4 class="text-xl font-bold mb-6">
+                    Información de Contacto
+                  </h4>
+                  <div class="space-y-6">
+                    <a
+                      href="mailto:14bryanespinoza@gmail.com"
+                      class="group flex items-center gap-4 p-4 bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl hover:border-indigo-500/50 transition-all"
+                    >
+                      <div
+                        class="w-12 h-12 flex items-center justify-center bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl group-hover:scale-110 transition-transform"
+                      >
+                        <i class="fa-solid fa-envelope text-lg"></i>
+                      </div>
+                      <div>
+                        <p
+                          class="text-xs font-bold uppercase tracking-widest text-gris-500 dark:text-gris-500 mb-0.5"
+                        >
+                          Email
+                        </p>
+                        <p class="text-sm font-semibold">
+                          14bryanespinoza@gmail.com
+                        </p>
+                      </div>
+                    </a>
+
+                    <div
+                      class="group flex items-center gap-4 p-4 bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-2xl"
+                    >
+                      <div
+                        class="w-12 h-12 flex items-center justify-center bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-xl"
+                      >
+                        <i class="fa-solid fa-location-dot text-lg"></i>
+                      </div>
+                      <div>
+                        <p
+                          class="text-xs font-bold uppercase tracking-widest text-gris-500 dark:text-gris-500 mb-0.5"
+                        >
+                          Ubicación
+                        </p>
+                        <p class="text-sm font-semibold">Carazo, Nicaragua</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Social Links Mini-Section -->
+                <div class="text-center mt-2">
+                  <h4
+                    class="text-sm font-bold uppercase tracking-widest text-gris-500 dark:text-gris-500 mb-2"
+                  >
+                    Mis Redes
+                  </h4>
+                  <div class="flex justify-center gap-2">
+                    <a
+                      href="https://linkedin.com/in/14bryanespinoza"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="w-12 h-12 flex items-center justify-center text-gris-600 dark:text-gris-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-500/50 transition-all shadow-sm"
+                    >
+                      <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a
+                      href="https://github.com/14BryanEspinoza"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="w-12 h-12 flex items-center justify-center text-gris-600 dark:text-gris-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-500/50 transition-all shadow-sm"
+                    >
+                      <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Form -->
+              <div
+                class="bg-white dark:bg-gris-900 border border-gris-200 dark:border-gris-800 rounded-3xl p-8 shadow-sm"
+              >
+                <form
+                  action="https://formsubmit.co/14bryanespinoza@gmail.com"
+                  method="POST"
+                  class="flex flex-col gap-4"
+                >
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-sm font-semibold mb-2 text-gris-700 dark:text-gris-300"
+                      >Nombre</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      class="w-full px-4 py-3 bg-gris-50 dark:bg-gris-950 border border-gris-200 dark:border-gris-800 rounded-xl focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none transition-all dark:text-white"
+                      placeholder="Tu nombre"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-semibold mb-2 text-gris-700 dark:text-gris-300"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value="14bryanespinoza@gmail.com"
+                      readonly
+                      required
+                      class="w-full px-4 py-3 bg-gris-50 dark:bg-gris-950 border border-gris-200 dark:border-gris-800 rounded-xl focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none transition-all dark:text-white"
+                      placeholder="tu@email.com"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="message"
+                      class="block text-sm font-semibold mb-2 text-gris-700 dark:text-gris-300"
+                      >Mensaje</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                      class="w-full px-4 py-3 bg-gris-50 dark:bg-gris-950 border border-gris-200 dark:border-gris-800 rounded-xl focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none transition-all dark:text-white resize-none"
+                      placeholder="¿En qué puedo ayudarte?"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full p-4 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 shadow-lg shadow-indigo-500/25 transition-all active:scale-[0.98] flex items-center justify-center gap-2"
+                  >
+                    Enviar Mensaje
+                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer
+      class="p-12 border-t border-gris-200 dark:border-gris-800 bg-white dark:bg-gris-950"
+    >
+      <div class="container mx-auto px-4 md:px-6 text-center">
+        <!-- Quote -->
+        <p
+          class="text-gris-600 dark:text-gris-400 italic mb-8 max-w-lg mx-auto leading-relaxed"
+        >
+          "Programa no para resolver problemas, sino para crear soluciones."
+        </p>
+
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-gris-100 dark:border-gris-900"
+        >
+          <!-- Copyright -->
+          <p class="text-sm text-gris-500 dark:text-gris-500">
+            Copyright &copy; 2026 - 14BryanEspinoza
+          </p>
+
+          <!-- Socials Small -->
+          <div class="flex items-center gap-6">
+            <a
+              href="https://github.com/14BryanEspinoza"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gris-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            >
+              <i class="fa-brands fa-github text-xl"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/14bryanespinoza"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gris-400 hover:text-[#0077B5] transition-colors"
+            >
+              <i class="fa-brands fa-linkedin text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

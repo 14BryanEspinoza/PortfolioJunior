@@ -16,48 +16,51 @@ export const initTheme = () => {
     mobileLight: document.getElementById('mobile-theme-toggle-light-icon'),
   };
 
+  /**
+   * Muestra u oculta un icono mediante inline styles para evitar conflictos
+   * con estilos de terceros (como Font Awesome) que sobreescriben 'display'.
+   */
+  const showIcon = (el) => {
+    if (el) el.style.display = 'inline-block';
+  };
+  const hideIcon = (el) => {
+    if (el) el.style.display = 'none';
+  };
+
   // Const Apply Theme
   const applyTheme = (theme) => {
-    // Si el tema es oscuro
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
-      icons.dark?.classList.add('hidden');
-      icons.light?.classList.remove('hidden');
-      icons.mobileDark?.classList.add('hidden');
-      icons.mobileLight?.classList.remove('hidden');
+      // Modo oscuro → mostrar el sol (para cambiar a claro)
+      showIcon(icons.light);
+      hideIcon(icons.dark);
+      showIcon(icons.mobileLight);
+      hideIcon(icons.mobileDark);
       localStorage.setItem('color-theme', 'dark');
     } else {
-      // Si el tema es claro
+      // Modo claro → mostrar la luna (para cambiar a oscuro)
       document.documentElement.classList.remove('dark');
-      icons.dark?.classList.remove('hidden');
-      icons.light?.classList.add('hidden');
-      icons.mobileDark?.classList.remove('hidden');
-      icons.mobileLight?.classList.add('hidden');
+      showIcon(icons.dark);
+      hideIcon(icons.light);
+      showIcon(icons.mobileDark);
+      hideIcon(icons.mobileLight);
       localStorage.setItem('color-theme', 'light');
     }
   };
 
   // Const Toggle Theme
   const toggleTheme = () => {
-    // Alternar el tema
-    const currentTheme = document.documentElement.classList.contains('dark')
-      ? 'light'
-      : 'dark';
+    const currentTheme = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
     applyTheme(currentTheme);
   };
 
-  // Const Saved Theme
+  // Obtener el tema guardado o preferencia del sistema
   const savedTheme =
-    // Obtener el tema guardado
     localStorage.getItem('color-theme') ||
-    (window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light');
+    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
   applyTheme(savedTheme);
 
-  // Si el tema es oscuro, mostrar el icono oscuro
   if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
-  if (mobileThemeToggle)
-    mobileThemeToggle.addEventListener('click', toggleTheme);
+  if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
 };
